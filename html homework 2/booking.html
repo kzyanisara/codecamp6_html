@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Flight booking form</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        html * {
+            box-sizing: border-box;
+        }
+
+        section {
+            width: 583px;
+            height: auto;
+            margin: 0 auto;
+        }
+
+        form {
+            margin: 20px;
+            position: relative;
+            height: auto;
+        }
+
+
+        label {
+            margin-bottom: 2px;
+        }
+
+        fieldset {
+            padding: 10px 0;
+            width: 541px;
+            border: none;
+        }
+
+        fieldset div {
+            display: inline-block;
+            padding: 5px 0px;
+            float: left;
+        }
+
+        fieldset div label {
+            display: block;
+            color: #333333;
+        }
+
+        .two-fields {
+            width: 150px;
+            height: 67px;
+        }
+
+        .switch-icon {
+            width: 41px;
+            height: 66px;
+            padding-top: 32px;
+            padding-left: 10px;
+        }
+
+        .hidden {
+            visibility: hidden;
+        }
+
+        .switch-icon span {
+            font-size: 20px;
+        }
+
+
+        input[type=text] {
+            height: 29px;
+            width: 100%;
+            margin: 3px 0;
+            padding: 5px;
+            outline: none;
+        }
+
+        input[type=date] {
+            height: 29px;
+            width: 60%;
+            margin: 3px 0;
+            outline: none;
+        }
+
+        #adult-count, #children-count, #currency-count {
+            height: 30px;
+            width: 60px;
+            outline: none
+        }
+
+        #infant-count{
+            height: 30px;
+            width: 120px;
+            outline: none
+        }
+
+        details {
+            border-bottom: 2px dotted #9a9a9a;
+        }
+
+        summary {
+            padding: 10px 2px;
+            color: #5684d3;
+            outline: none;
+        }
+
+
+        .switch-icon {
+            width: 41px;
+            height: 66px;
+            padding-top: 32px;
+            padding-left: 10px;
+        }
+
+        #submit {
+            float: left;
+            margin-left: 20px;
+            font-weight: bold;
+            font-size: 17px;
+            padding: 10px;
+            width: 150px;
+            background-color: #f76600;
+            color: #fff;
+            border-radius: 5px;
+        }
+
+        #depart, #return{
+            width: 120px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+<section>
+    <form action="#" method="GET">
+        <fieldset>
+            <div class="two-fields">
+                <label for="from"><strong>Flying From</strong></label>
+                <select name="from" id="infant-count">
+                    <option value="bangkok" selected="selected">Bangkok</option>
+                    <option value="tokyo">Tokyo</option>
+                    <option value="osaka">Osaka</option>
+                    <option value="taipei">Taipei</option>
+                    <option value="hk">Hongkok</option>
+                </select>
+            </div>
+            <div class="switch-icon">
+                <span></span>
+            </div>
+            <div class="two-fields">
+                <label for="to"><strong>To</strong></label>
+                <select name="adult" id="infant-count">
+                    <option value="bangkok" selected="selected">Bangkok</option>
+                    <option value="tokyo">Tokyo</option>
+                    <option value="osaka">Osaka</option>
+                    <option value="taipei">Taipei</option>
+                    <option value="hk">Hongkok</option>
+                </select></div>
+        </fieldset>
+        <fieldset>
+            <div class="two-fields">
+                <label for="depart"><strong>Departing</strong></label>
+                <input type="date" name="depart-on" id="depart">
+            </div>
+            <div class="switch-icon hidden">
+                <span>&rlhar;</span>
+            </div>
+            <div class="two-fields">
+                <label for="return"><strong>Returning</strong></label>
+                <input type="date" name="return-on" id="return">
+            </div>
+        </fieldset>
+        <fieldset>
+
+            <div style="margin-right: 25px">
+                <label for="adult" style="margin-bottom: -9px">Adult</label> <br>
+                <input type="number" name="number-adult" id="adult-count" value="1">
+            </div>
+            <div style="margin-right: 25px">
+                <label for="child" style="margin-bottom: -9px">Child</label> <br>
+                <input type="number" name="number-child" id="children-count" value="1">
+
+            </div>
+            <div style="margin-right: 25px">
+                <label for="infant" style="margin-bottom: -9px">Infant</label> <br>
+                <input type="number" name="number-infant" id="children-count" value="1">
+            </div>
+            <div>
+                <label for="currency" style="margin-bottom: -9px">Currency</label> <br>
+                <select name="currency" id="currency-count">
+                    <option value="thb">THB</option>
+                    <option value="jpy">JPY</option>
+                    <option value="hkd">HKD</option>
+                    <option value="twd">TWD</option>
+                </select>
+            </div>
+        </fieldset>
+    </form>
+    <input type="submit" name="Search" id="submit" value="Search">
+
+</section>
+</body>
+
+</html>
+
+
+
