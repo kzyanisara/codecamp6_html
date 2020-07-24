@@ -82,13 +82,13 @@
             outline: none;
         }
 
-        #adult-count, #children-count, #currency-count {
+        .adult-count, .children-count, .currency-count {
             height: 30px;
             width: 60px;
             outline: none
         }
 
-        #infant-count{
+        .infant-count{
             height: 30px;
             width: 120px;
             outline: none
@@ -137,8 +137,8 @@
     <form action="#" method="GET">
         <fieldset>
             <div class="two-fields">
-                <label for="from"><strong>Flying From</strong></label>
-                <select name="from" id="infant-count">
+                <label><strong>Flying From</strong></label>
+                <select name="from" class="infant-count">
                     <option value="bangkok" selected="selected">Bangkok</option>
                     <option value="tokyo">Tokyo</option>
                     <option value="osaka">Osaka</option>
@@ -150,10 +150,10 @@
                 <span></span>
             </div>
             <div class="two-fields">
-                <label for="to"><strong>To</strong></label>
-                <select name="adult" id="infant-count">
-                    <option value="bangkok" selected="selected">Bangkok</option>
-                    <option value="tokyo">Tokyo</option>
+                <label><strong>To</strong></label>
+                <select name="adult" class="infant-count">
+                    <option value="tokyo" selected="selected">Tokyo</option>
+                    <option value="bangkok">Bangkok</option>
                     <option value="osaka">Osaka</option>
                     <option value="taipei">Taipei</option>
                     <option value="hk">Hongkok</option>
@@ -175,21 +175,21 @@
         <fieldset>
 
             <div style="margin-right: 25px">
-                <label for="adult" style="margin-bottom: -9px">Adult</label> <br>
-                <input type="number" name="number-adult" id="adult-count" value="1">
+                <label  style="margin-bottom: -9px">Adult</label> <br>
+                <input type="number" name="number-adult" class="adult-count" value="1">
             </div>
             <div style="margin-right: 25px">
-                <label for="child" style="margin-bottom: -9px">Child</label> <br>
-                <input type="number" name="number-child" id="children-count" value="1">
+                <label style="margin-bottom: -9px">Child</label> <br>
+                <input type="number" name="number-child" class="children-count" value="1">
 
             </div>
             <div style="margin-right: 25px">
-                <label for="infant" style="margin-bottom: -9px">Infant</label> <br>
-                <input type="number" name="number-infant" id="children-count" value="1">
+                <label style="margin-bottom: -9px">Infant</label> <br>
+                <input type="number" name="number-infant" class="children-count" value="1">
             </div>
             <div>
-                <label for="currency" style="margin-bottom: -9px">Currency</label> <br>
-                <select name="currency" id="currency-count">
+                <label style="margin-bottom: -9px">Currency</label> <br>
+                <select name="currency" class="currency-count">
                     <option value="thb">THB</option>
                     <option value="jpy">JPY</option>
                     <option value="hkd">HKD</option>
